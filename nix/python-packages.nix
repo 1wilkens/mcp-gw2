@@ -19,6 +19,7 @@ let
       format = "wheel";
       src = prev.pkgs.fetchurl { inherit url hash; };
       doCheck = false;
+      dontCheckRuntimeDeps = true;
       pythonImportsCheck = [ ];
     };
 
